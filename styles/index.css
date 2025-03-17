@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+:root {
+    background-color: hsl(var(--primary));
+
+    /* FONT */
+    font-family: "Roboto Flex", Roboto, system-ui, -apple-system, sans-serif;
+    color: hsl(var(--primary-foreground));
+    font-size: var(--text-md);
+
+    --text-xs: 8pt;
+    --text-sm: 10pt;
+    --text-md: 12pt;
+    --text-lg: 16pt;
+    --text-xl: 24pt;
+    --text-2xl: 42pt;
+
+    /* COLORS */
+    --primary: 0, 0%, 98%;
+    --primary-foreground: 0, 0%, 20%;
+
+    --secondary: 0, 0%, 96%;
+    --secondary-foreground: 0, 0%, 25%;
+
+    --muted: 0, 0%, 94%;
+    --muted-foreground: 0, 0%, 40%;
+
+    --border: 0, 0%, 90%;
+
+    --brand: 226, 44%, 15%;
+    --brand-blue: 200, 46%, 40%;
+    --brand-red: 6, 61%, 52%;
+    --brand-orange: 26, 64%, 52%;
+
+    --accent-gradient: linear-gradient(
+        90deg,
+        hsl(var(--brand-red)),
+        hsl(var(--brand-orange))
+    );
+    --accent-gradient-reverse: linear-gradient(
+        0deg,
+        hsl(var(--brand-red)),
+        hsl(var(--brand-orange))
+    );
+    --accent-foreground: 0, 0%, 98%;
+
+    /* SPACING */
+    --space-xxs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 5rem;
+
+    /* CONTAINERS */
+    --container-xs: 12rem;
+    --container-sm: 24rem;
+    --container-md: 36rem;
+    --container-lg: 48rem;
+    --container-xl: 64rem;
+
+    /* BORDER */
+    --border-primary: 1pt solid hsl(var(--border));
+    --radius: 0.25rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: var(--dark-background-color);
+        --text-color: var(--dark-text-color);
+    }
+}
