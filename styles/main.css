@@ -161,12 +161,6 @@ main {
     flex-direction: column;
     padding: var(--space-lg) var(--space-sm);
     width: 100%;
-
-    h2 {
-        background: var(--accent-gradient);
-        color: transparent;
-        background-clip: text;
-    }
 }
 
 .preview-section {
@@ -191,10 +185,10 @@ main {
 
 .preview-feature {
     display: flex;
-    align-items: center;
     gap: var(--space-md);
     flex-wrap: wrap-reverse;
     justify-content: center;
+    align-items: center;
 }
 
 .preview-feature-reverse {
