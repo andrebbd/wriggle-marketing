@@ -32,7 +32,8 @@
     left: 0;
     border: 1pt solid transparent;
     background-clip: padding-box, border-box;
-    background-image: linear-gradient(hsl(var(--primary)), white), var(--accent-gradient);
+    background-image: linear-gradient(hsl(var(--primary)), white),
+        var(--accent-gradient);
     border-radius: var(--radius);
     box-sizing: border-box;
 }

@@ -284,6 +284,32 @@ main {
     }
 }
 
+#contact-form {
+    width: 100%;
+    max-width: var(--container-xl);
+    gap: var(--space-sm);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    input,
+    button {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    #email {
+        flex: 1;
+        font-size: var(--text-md);
+        max-width: var(--container-md);
+    }
+
+    #email:focus {
+        outline-color: hsl(var(--brand-blue));
+    }
+}
+
+#contact-form-submit {
+}
+
 @media screen and (max-width: 420px) {
     .contact-sales-nav-link,
     .nav-links {
