@@ -233,6 +233,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-md);
+    justify-content: center;
 }
 
 .product-feature-section-content {
