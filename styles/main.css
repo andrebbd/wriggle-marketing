@@ -301,10 +301,49 @@ main {
     }
 }
 
-#contact-form-submit {
+.footer-logo{
+    height: var(--text-xl);
 }
 
-@media screen and (max-width: 420px) {
+.app-footer-section {
+    flex: 1;
+    max-width: var(--container-xl);
+    display: flex;
+    flex-direction: column;
+
+    header {
+        color: hsl(var(--primary-foreground));
+        font-weight: bold;
+        height: var(--text-xl);
+        font-size: var(--text-md);
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        gap: var(--space-xs);
+
+        li > a {
+            font-size: var(--text-sm);
+            color: hsl(var(--secondary-foreground));
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+
+#app-footer {
+    width: 100%;
+    max-width: var(--container-xl);
+    display: flex;
+    background-color: hsl(var(--secondary));
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius);
+}
+
+@media screen and (max-width: 540px) {
     .contact-sales-nav-link,
     .nav-links {
         display: none;
