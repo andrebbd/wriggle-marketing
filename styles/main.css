@@ -237,6 +237,9 @@ main {
 
 .product-feature-section-content {
     max-width: var(--container-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .feature-list {

@@ -87,10 +87,3 @@ body {
     scroll-behavior: smooth;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: var(--dark-background-color);
-    --text-color: var(--dark-text-color);
-  }
-}
